@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -31,6 +32,22 @@ public class Main {
     }
     static public void task3() {
         System.out.println("Задача 3");
+        int year = 2021;
+        boolean multipleOfFour = year % 4 == 0;
+        boolean multipleOfHundred = year % 100 != 0;
+        boolean multipleOf4Hundred = year % 400 == 0;
+        if (multipleOfFour) {
+            System.out.println("Год является високосным");
+        } else if (multipleOfHundred) {
+            System.out.println("Год не является високосным");
+        } else if (multipleOf4Hundred) {
+            System.out.println("Год является високосным");
+        } else {
+            System.out.println("Год не является високосным");
+        }
+    }
 
+    public static void task4() {
+        System.out.println("Задача 4");
     }
 }
