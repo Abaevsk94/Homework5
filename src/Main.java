@@ -5,7 +5,6 @@ public class Main {
         task3();
         task4();
         task5();
-        example();
     }
 
     public static void task1() {
@@ -35,7 +34,7 @@ public class Main {
     static public void task3() {
         System.out.println("Задача 3");
         int year = 2021;
-        if (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0)) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println("Год является високосным");
         } else {
             System.out.println("Год не является високосным");
